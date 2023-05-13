@@ -1,1 +1,0 @@
-# technore24.github.io
