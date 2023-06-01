@@ -1,41 +1,78 @@
-<html lang="en">
+<html>
+   <head>
+      <title>technore24</title>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+   </head>
+   <style>    
+      body{
+     text-align: center;
+     font-size: 22px;
+     font-family: 'Montserrat';
+}
+ body p {
+     padding-right: 20%;
+     padding-left: 20%;
+}
+ .wave {
+     animation-name: wave-animation;
+     animation-duration: 2.5s;
+     animation-iteration-count: infinite;
+     transform-origin: 70% 70%;
+     display: inline-block;
+}
+ @keyframes wave-animation {
+     0% {
+         transform: rotate( 0.0deg) 
+    }
+     10% {
+         transform: rotate(14.0deg) 
+    }
+     20% {
+         transform: rotate(-8.0deg) 
+    }
+     30% {
+         transform: rotate(14.0deg) 
+    }
+     40% {
+         transform: rotate(-4.0deg) 
+    }
+     50% {
+         transform: rotate(10.0deg) 
+    }
+     60% {
+         transform: rotate( 0.0deg) 
+    }
+     100% {
+         transform: rotate( 0.0deg) 
+    }
+}
+ .button {
+     background: #5E5DF0;
+     border-radius: 999px;
+     box-shadow: #5E5DF0 0 10px 20px -10px;
+     box-sizing: border-box;
+     color: #FFFFFF;
+     cursor: pointer;
+     font-size: 20px;
+     opacity: 1;
+     outline: 0 solid transparent;
+     padding: 12px 28px;
+     user-select: none;
+     touch-action: manipulation;
+     width: fit-content;
+     word-break: break-word;
+     border: 0;
+}
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>technore</title>
-    <link rel=" stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-
-<body>
-    <main class="main" id="main">
-        <section class="home full-screen-left" id="home">
-            <div class="container">
-                <div class="row align-items-center gx-0 gy-sm-4 mx-auto text-center">
-                    <div class="col-md-6">
-                        <div class="home__img mx-auto">
-                            <img src="assets/technore.jpg" alt="technore's picture!"
-                                draggable="false" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="home__info">
-                            <h2 class="home__info__title">
-                                technore24
-                                <span></span>
-                            </h2>
-                            <p class="home__info__desc my-4">
-                                I'm a freelancer mobile application developer who has skills in Java, Kotlin and Swift languages and also I'm reverse engineering apps
-                            </p>
-                            <a id="read-more-home" class="home__info__btn custom-btn mx-auto" href="https://t.me/technore24">contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
-
+   </style>
+   <body>
+      <br>
+      <br>
+      <h2>Hello, I'm Sandanidu <span class="wave">👋</span></h2>
+      <div>
+         <p>I'm a mobile application developer with knowledge in Java, Kotlin and Swift languages, and expertise in socket programming and reverse engineering android applications.</p>
+      </div>
+      <br>
+      <button class="button" onclick="location.href='https://t.me/technore24'" type="button">Reach Out to me</button>
+   </body>
 </html>
